@@ -1,61 +1,72 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🛒 Tienda Online - Dispositivos Inteligentes
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Este proyecto corresponde a la **Fase 1** del desarrollo de una tienda online.  
+En esta primera etapa se implementó el **Front-end** del sitio web usando **Laravel con Breeze** y **Tailwind CSS**, donde los usuarios pueden explorar dispositivos inteligentes como celulares y portátiles, organizados por **fecha de lanzamiento, marca y tipo**, además de contar con filtros básicos y un buscador.  
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 📸 Vista previa
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+![Vista previa del aplicativo](./public/assets/preview.png)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+*(Agrega una captura en la ruta `public/assets/preview.png` o ajusta el enlace a donde guardes tu imagen)*
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## ✨ Características principales (Fase 1)
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- Listado de dispositivos inteligentes en la página inicial.
+- Organización por:
+  - Fecha de lanzamiento
+  - Marca
+  - Tipo de dispositivo
+- Barra de búsqueda y filtros básicos.
+- Vista de detalle de cada dispositivo con información extendida.
+- Sistema de reseñas y comentarios para cada producto.
+- Preparado para integrar un **sistema de administración con CRUD y login** en fases posteriores.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## 🛠️ Tecnologías utilizadas
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- [Laravel 11](https://laravel.com/) – Framework principal.
+- [Breeze](https://laravel.com/docs/11.x/starter-kits#laravel-breeze) – Sistema de autenticación básico.
+- [Tailwind CSS](https://tailwindcss.com/) – Estilos responsivos y utilitarios.
+- **MySQL** – Base de datos.
+- **JavaScript** – Funcionalidades dinámicas del front.
+- **HTML5** – Estructura del sitio.
+- **CSS3** – Personalización adicional de estilos.
+- **Visual Studio Code** – Editor de desarrollo.
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## 🚀 Próximas fases del proyecto
 
-## Contributing
+- **Fase 2**: Desarrollo del **Back-end** con CRUD y panel de administración.
+- **Fase 3**: Creación de una **API REST** para exponer y consumir datos desde el sistema.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## 📂 Estructura del proyecto
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+├── app/ # Lógica de Laravel
+├── database/ # Migraciones y seeds de MySQL
+├── public/
+│ └── assets/
+│ └── preview.png # Captura del aplicativo
+├── resources/
+│ ├── css/ # Estilos personalizados
+│ ├── js/ # Lógica en JavaScript
+│ └── views/ # Vistas Blade con Tailwind
+├── routes/ # Rutas de la aplicación
+├── .env # Configuración de entorno
+└── README.md
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
-## License
+## 👨‍💻 Autor
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+**Erick Hernández**  
+📧 Contacto: *enhernandez@ucompensar.edu.co*  
+📌 Proyecto académico Ucompensar– Desarrollo de una Tienda Online - DESARROLLO DE SOFTWARE WEB BACK-END
