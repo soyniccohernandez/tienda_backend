@@ -4,7 +4,8 @@
     <div class="bg-red-600 text-white text-center px-4 py-2">
         <p class="text-sm sm:text-base font-semibold leading-tight">
             Proyecto desarrollado únicamente por
-            <span class="underline">Erick Nicolás Hernández Diaz</span>,
+            <span class="underline">Erick Nicolás Hernández Díaz</span> y
+            <span class="underline">Jose Hermes Rocha Morales</span>,
             para la clase de <span class="italic">DESARROLLO DE SOFTWARE WEB BACK-END</span>
             – <span class="font-bold">Contextualización - Actividad 02</span>
         </p>
@@ -12,6 +13,7 @@
             🚫 Se prohíbe el uso de este recurso fuera de este ámbito. Cualquier uso NO está autorizado.
         </p>
     </div>
+
 
     <!-- Navbar blanco -->
     <div class="bg-white">

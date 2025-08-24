@@ -113,8 +113,13 @@ php artisan serve
 
 ---
 
-## 👨‍💻 Autor
+## 👨‍💻 Autores
 
-**Erick Hernández**  
+**Erick Nicolás Hernández Díaz**  
 📧 Contacto: *enhernandez@ucompensar.edu.co*  
-📌 Proyecto académico Ucompensar– Desarrollo de una Tienda Online - DESARROLLO DE SOFTWARE WEB BACK-END
+
+**Jose Hermes Rocha Morales**  
+📧 Contacto: *jhermesrocha@ucompensar.edu.co*  
+
+📌 Proyecto académico Ucompensar – Desarrollo de una Tienda Online - **DESARROLLO DE SOFTWARE WEB BACK-END**
+
