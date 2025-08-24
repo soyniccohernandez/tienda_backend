@@ -1,0 +1,76 @@
+// Use DBML to define your database structure
+// Docs: https://dbml.dbdiagram.io/docs
+
+Table users {
+  id integer [primary key, increment]
+  name varchar
+  email varchar [unique]
+  email_verified_at timestamp
+  password varchar
+  role varchar [note: 'Valores: admin, standard']
+  remember_token varchar
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table categorias {
+  id integer [primary key, increment]
+  nombre varchar
+  descripcion text
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table productos {
+  id integer [primary key, increment]
+  nombre varchar
+  marca varchar
+  especificaciones text
+  garantia varchar
+  precio decimal(10,2)
+  fecha_lanzamiento date
+  categoria_id integer [not null]
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table fotos_productos {
+  id integer [primary key, increment]
+  producto_id integer [not null]
+  nombre_archivo varchar
+  ruta_archivo varchar
+  tipo_archivo varchar
+  tamano_archivo integer [note: 'Tamaño en KB']
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table detalles_productos {
+  id integer [primary key, increment]
+  producto_id integer [unique, not null]
+  caracteristicas text
+  resumen text
+  especificaciones text
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table reseñas {
+  id integer [primary key, increment]
+  producto_id integer [not null]
+  user_id integer [not null]
+  contenido text
+  rating integer
+  created_at timestamp
+  updated_at timestamp
+  indexes {
+    (producto_id, user_id) [unique] // Un usuario solo puede reseñar un producto una vez
+  }
+}
+
+// Relaciones
+Ref: productos.categoria_id > categorias.id
+Ref: fotos_productos.producto_id > productos.id
+Ref: detalles_productos.producto_id > productos.id
+Ref: reseñas.producto_id > productos.id
+Ref: reseñas.user_id > users.id
