@@ -62,6 +62,51 @@ En esta primera etapa se implementó el **Front-end** del sitio web usando **Lar
 ├── .env # Configuración de entorno
 └── README.md
 
+## 📦 Instalación y configuración
+
+Sigue estos pasos para levantar el proyecto en tu entorno local:
+
+### ✅ Requisitos previos
+Antes de clonar, asegúrate de tener instalado:
+- [XAMPP](https://www.apachefriends.org/es/download.html) (Apache y MySQL activos)
+- [Composer](https://getcomposer.org/) (para gestionar dependencias de PHP)
+- [Node.js y NPM](https://nodejs.org/) (para compilar Tailwind y recursos frontend)
+- [Git](https://git-scm.com/) (para clonar el repositorio)
+- Visual Studio Code o cualquier IDE de tu preferencia
+
+---
+
+### 📥 Clonar el repositorio
+```bash
+git clone https://github.com/tu-usuario/tu-repo.git
+cd tu-repo
+
+cp .env.example .env
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=tienda
+DB_USERNAME=root
+DB_PASSWORD=
+
+⚠️ Asegúrate de crear la base de datos tienda desde phpMyAdmin o MySQL antes de continuar.
+
+
+composer install
+
+npm install
+
+php artisan migrate
+
+php artisan db:seed
+
+npm run dev
+
+php artisan serve
+
+
+
 
 ---
 
