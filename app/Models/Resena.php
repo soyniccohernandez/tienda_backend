@@ -10,7 +10,7 @@ class Resena extends Model
     use HasFactory;
 
     // Nombre de la tabla (opcional, Laravel lo infiere automáticamente)
-    protected $table = 'reseñas';
+    protected $table = 'resenas';
 
     // Campos que se pueden asignar de forma masiva
     protected $fillable = [

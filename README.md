@@ -1,7 +1,10 @@
 # 🛒 Tienda Online - Dispositivos Inteligentes
 
-Este proyecto corresponde a la **Fase 1** del desarrollo de una tienda online.  
-En esta primera etapa se implementó el **Front-end** del sitio web usando **Laravel con Breeze** y **Tailwind CSS**, donde los usuarios pueden explorar dispositivos inteligentes como celulares y portátiles, organizados por **fecha de lanzamiento, marca y tipo**, además de contar con filtros básicos y un buscador.  
+Este proyecto corresponde a la Fase 1 del desarrollo de una tienda online.
+En esta primera etapa se implementó el Front-end del sitio web usando Laravel con Breeze y Tailwind CSS, donde los usuarios pueden explorar dispositivos inteligentes como celulares y portátiles, organizados por fecha de lanzamiento, marca y tipo, además de contar con filtros básicos y un buscador.
+
+La aplicación ya se encuentra desplegada y disponible en el siguiente enlace:
+👉 https://tienda.nicolashernandez.co/
 
 ---
 
