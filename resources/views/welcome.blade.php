@@ -10,6 +10,7 @@
 </head>
 
 <body class="bg-gray-100 font-sans">
+    
     <x-navbar />
     <!-- Agregar un margen superior para que no quede tapado por el navbar fijo -->
     <div class="h-16"></div>
@@ -17,7 +18,7 @@
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 
 
-    <div class="max-w-7xl mx-auto px-4 py-8">
+    <div class="max-w-7xl mx-auto px-4 py-8 mt-[4rem]">
         <!-- Carrousel de promociones -->
         <div class="max-w-7xl mx-auto mb-8">
 
