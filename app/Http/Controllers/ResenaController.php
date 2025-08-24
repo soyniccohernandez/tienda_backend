@@ -1,0 +1,34 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\Producto;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
+class ResenaController extends Controller
+{
+    public function store(Request $request, Producto $producto)
+    {
+        // Validar datos
+        $request->validate([
+            'contenido' => 'required|string|max:1000',
+            'rating' => 'nullable|integer|min:1|max:5',
+        ]);
+
+        // Revisar si el usuario ya dejó una reseña para este producto
+        $existeResena = $producto->resenas()->where('user_id', Auth::id())->exists();
+        if ($existeResena) {
+            return redirect()->back()->with('error', 'Ya has dejado una reseña para este producto.');
+        }
+
+        // Crear la reseña
+        $resena = $producto->resenas()->create([
+            'user_id' => Auth::id(),
+            'contenido' => $request->contenido,
+            'rating' => $request->rating,
+        ]);
+
+        return redirect()->back()->with('success', 'Reseña agregada correctamente.');
+    }
+}
