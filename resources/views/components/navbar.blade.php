@@ -7,7 +7,7 @@
             <span class="underline">Erick Nicolás Hernández Díaz</span> y
             <span class="underline">Jose Hermes Rocha Morales</span>,
             para la clase de <span class="italic">DESARROLLO DE SOFTWARE WEB BACK-END</span>
-            – <span class="font-bold">Contextualización - Actividad 02</span>
+            – <span class="font-bold">Profundización - Actividad 04</span>
         </p>
         <p class="text-xs mt-1 opacity-80">
             🚫 Se prohíbe el uso de este recurso fuera de este ámbito. Cualquier uso NO está autorizado.
@@ -19,14 +19,26 @@
     <div class="bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
-                <!-- Logo -->
-                <div class="flex-shrink-0">
+                <!-- Logo + Link Administración -->
+                <div class="flex items-center space-x-4">
+                    <!-- Logo -->
                     <a href="{{ url('/') }}" class="text-2xl font-bold text-indigo-600">MiTienda</a>
+
+                    <!-- Link Administración solo para admin -->
+                    @auth
+                    @if(auth()->user()->role === 'admin')
+                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                        {{ __('Administración') }}
+                    </x-nav-link>
+                    @endif
+                    @endauth
                 </div>
 
                 <!-- Carrito y Auth -->
                 <div class="flex items-center space-x-4">
-                    <!-- Carrito -->
+                    <!-- Carrito solo si no es admin -->
+                    @auth
+                    @if(auth()->user()->role !== 'admin')
                     <a href="" class="relative text-gray-700 hover:text-indigo-600 transition">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
                             viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
@@ -39,6 +51,8 @@
                             class="absolute -top-2 -right-2 bg-red-600 text-white text-xs rounded-full px-1">{{ count(session('carrito')) }}</span>
                         @endif
                     </a>
+                    @endif
+                    @endauth
 
                     <!-- Mi Cuenta / Auth -->
                     @auth
@@ -72,6 +86,7 @@
                     @endauth
                 </div>
             </div>
+
         </div>
     </div>
 </nav>

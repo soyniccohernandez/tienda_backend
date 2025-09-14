@@ -20,7 +20,7 @@
 
     <div class="max-w-7xl mx-auto px-4 py-8 mt-[4rem]">
         <!-- Carrousel de promociones -->
-        <div class="max-w-7xl mx-auto mb-8">
+        <div class="max-w-7xl mx-auto mb-8 mt-5">
 
             <div x-data="carousel()" class="relative bg-white rounded-2xl shadow overflow-hidden">
                 <template x-for="(producto, index) in productos" :key="producto.id">

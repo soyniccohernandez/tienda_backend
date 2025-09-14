@@ -46,8 +46,7 @@
 
     <x-navbar />
 
-    <div class="max-w-7xl mx-auto px-4 py-8 mt-16 space-y-8">
-
+    <div class="max-w-7xl mx-auto px-4 py-8 space-y-8 mt-[10rem] md:mt-[8rem]">
         <!-- Información principal y fotos -->
         <div class="bg-white rounded-2xl shadow p-6 flex flex-col md:flex-row gap-6">
             <!-- Imagen principal -->

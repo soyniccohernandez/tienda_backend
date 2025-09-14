@@ -10,7 +10,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
                 <!-- Card Usuarios -->
-                <a href="#"
+                <a href="{{ route('users.index') }}"
                     class="block bg-white dark:bg-gray-800 shadow-md rounded-2xl p-6 text-center hover:shadow-xl transition">
                     <div class="text-indigo-600 dark:text-indigo-400 text-4xl mb-3">👥</div>
                     <h2 class="text-lg font-bold text-gray-900 dark:text-gray-100">Usuarios</h2>
@@ -20,7 +20,7 @@
                 </a>
 
                 <!-- Card Categorías -->
-                <a href="#"
+                <a href="{{ route('categorias.index') }}"
                     class="block bg-white dark:bg-gray-800 shadow-md rounded-2xl p-6 text-center hover:shadow-xl transition">
                     <div class="text-yellow-600 dark:text-yellow-400 text-4xl mb-3">🗂️</div>
                     <h2 class="text-lg font-bold text-gray-900 dark:text-gray-100">Categorías</h2>
@@ -30,7 +30,7 @@
                 </a>
 
                 <!-- Card Productos -->
-                <a href="#"
+                <a href="{{ route('productosback.index') }}" 
                     class="block bg-white dark:bg-gray-800 shadow-md rounded-2xl p-6 text-center hover:shadow-xl transition">
                     <div class="text-green-600 dark:text-green-400 text-4xl mb-3">📦</div>
                     <h2 class="text-lg font-bold text-gray-900 dark:text-gray-100">Productos</h2>
