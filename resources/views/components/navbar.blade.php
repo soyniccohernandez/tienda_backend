@@ -7,7 +7,7 @@
             <span class="underline">Erick Nicolás Hernández Díaz</span> y
             <span class="underline">Jose Hermes Rocha Morales</span>,
             para la clase de <span class="italic">DESARROLLO DE SOFTWARE WEB BACK-END</span>
-            – <span class="font-bold">Profundización - Actividad 04</span>
+            – <span class="font-bold">Transferencia - Actividad 06</span>
         </p>
         <p class="text-xs mt-1 opacity-80">
             🚫 Se prohíbe el uso de este recurso fuera de este ámbito. Cualquier uso NO está autorizado.

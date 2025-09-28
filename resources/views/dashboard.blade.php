@@ -40,7 +40,7 @@
                 </a>
 
                 <!-- Card API -->
-                <a href="#"
+                <a href="{{ route('api.documentation') }}"
                     class="block bg-white dark:bg-gray-800 shadow-md rounded-2xl p-6 text-center hover:shadow-xl transition">
                     <div class="text-purple-600 dark:text-purple-400 text-4xl mb-3">🔗</div>
                     <h2 class="text-lg font-bold text-gray-900 dark:text-gray-100">API</h2>

@@ -27,8 +27,10 @@ Route::resource('productosback', ProductosBackendController::class)->parameters(
     'productosback' => 'producto'
 ]);
 
-
-
+//Ruta para la documentación de la API
+Route::get('/api-documentation', function () {
+    return view('api.index');
+})->name('api.documentation');
 
 // Route::get('/', function () {
 //     return view('welcome');
